@@ -1,0 +1,200 @@
+:root {
+  --main-color: #213e97;
+}
+.App {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f6efe8;
+  min-height: 100vh;
+}
+
+.error {
+  color: var(--main-color);
+  margin: 10px 2px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.Navbar {
+  display: flex;
+  flex: 1 1 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  padding: 0 4vw;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.Navbar a {
+  text-decoration: none;
+  color: black;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons img {
+  width: 2rem;
+}
+.icons a {
+  margin-left: 1vw;
+  font-size: 2rem;
+  color: var(--main-color);
+}
+.Nav-links a {
+  margin-left: 1rem;
+  background-color: var(--main-color);
+  border: 1px solid transparent;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: 0.5s ease-in-out;
+}
+.Nav-links a:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.Homepage {
+  margin-top: 80px;
+  display: flex;
+  flex: 1 1 0;
+  z-index: 999;
+  position: relative;
+}
+.left {
+  flex-basis: 50%;
+}
+.right {
+  margin: 0 inherit;
+  flex-basis: 50%;
+}
+.left {
+  padding: 0 5rem;
+  position: relative;
+}
+.left h1 {
+  color: var(--main-color);
+  margin: 0;
+  font-size: 6rem;
+  font-weight: 800;
+}
+.left p {
+  display: flex;
+  word-wrap: wrap;
+  flex: 1;
+  font-size: 2rem;
+}
+button {
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  width: 30%;
+  border: 1px solid;
+  color: var(--main-color);
+  font-size: 1.2rem;
+  border-radius: 6px;
+  transition: 0.6s ease-in-out;
+}
+button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+input {
+  height: 48px;
+  width: 100%;
+  margin: 12px 0;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+.appbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 2rem;
+  height: 5rem;
+}
+.main-content {
+  display: flex;
+}
+.left-side {
+  flex-basis: 30%;
+}
+.left-side a {
+  display: block;
+  text-decoration: none;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: black;
+}
+.right-side {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-side section {
+  position: relative;
+  padding: 2rem 4rem;
+}
+
+.content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: center;
+}
+.responsive-youtube {
+  overflow: hidden;
+  padding-bottom: 36.25%;
+  position: relative;
+  margin-left: 10%;
+  height: 0;
+}
+.responsive-youtube iframe {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 780px) {
+  .Homepage {
+    flex-direction: column-reverse;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons a,
+  .icons img {
+    font-size: 1.3rem;
+    width: 1.3rem;
+  }
+  .Navbar {
+    font-weight: 500;
+    font-size: 0.6rem;
+  }
+  .left h1 {
+    font-size: 3rem;
+  }
+  .left p {
+    font-size: 1rem;
+  }
+  .left button {
+    width: 50%;
+  }
+  .right img {
+    width: 300px;
+  }
+  .content h1 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
