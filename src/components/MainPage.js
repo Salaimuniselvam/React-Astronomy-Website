@@ -91,6 +91,12 @@ class MainPage extends Component {
               <Layout>
                 <Content className="content">
                   <Switch>
+                    <Route exact path="/signin">
+                      <Lesson1 />
+                    </Route>
+                    <Route exact path="/signup">
+                      <Lesson1 />
+                    </Route>
                     <Route exact path="/lesson1">
                       <Lesson1 />
                     </Route>

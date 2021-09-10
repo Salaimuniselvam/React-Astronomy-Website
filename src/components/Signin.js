@@ -13,7 +13,6 @@ import Container from "@material-ui/core/Container";
 import Navbar from "./Navbar";
 import axios from "axios";
 import MainPage from "./MainPage";
-import { Route, Link as Linker } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
